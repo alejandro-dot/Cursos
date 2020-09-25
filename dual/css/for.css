@@ -1,0 +1,66 @@
+@font-face{
+    font-family: "osi";
+    src: url("../fuentes/fuente.ttf");
+}
+body{
+    background: url("../img/azul.jpg");
+	background-size:100%;
+	background-size: cover;
+    background-repeat:no-repeat; 
+  background-attachment: fixed;
+}
+
+nav{
+    max-width: 1000px;
+    width: 100%;
+	height: 60px;
+	padding-bottom: 50px;
+	margin-top: 10px;
+  margin-left: 10em;
+    background-color: rgba(0, 0, 0, 0.356);
+   padding-top: 2px;
+   color: white;
+   text-align: center;
+  margin-left: center;
+  border-radius: 2em;
+  margin-bottom: 10em;
+}
+
+nav :hover{
+	color: #94B6EA; 	
+
+}
+
+section{
+    max-width: 1000px;
+background-color:  rgba(99, 99, 99, 0.356);
+width:90%;
+height: 350px;
+font-size: 1.5em;
+text-decoration: none;
+border-radius: 10%;
+text-align: center;
+font-size: 25px;
+color: white;
+margin-left: 5em;
+padding: 2em;
+}
+
+header{
+   
+    width: 80%;
+	height: 300px;
+	padding-bottom: 2px;
+    background-color:rgba(99, 99, 99, 0.356);
+   color:white;
+   margin-left: 5em;
+   border-radius: 2em;
+   font-size: 1.5em;
+   text-align: center;
+   margin-bottom: 5em;
+   padding: 1em;
+}
+.for{
+    height:  200px;
+
+}

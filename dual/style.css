@@ -1,0 +1,115 @@
+@font-face{
+    font-family: "osi";
+    src: url("fuentes/fuente.ttf");
+}
+body{
+    background: url("img/azul.jpg");
+	background-size:100%;
+	background-size: cover;
+    background-repeat:no-repeat; 
+  background-attachment: fixed;
+}
+
+nav{
+    max-width: 1000px;
+    width: 100%;
+	height: 60px;
+	padding-bottom: 50px;
+	margin-top: 10px;
+  margin-left: 10em;
+    background-color: rgba(0, 0, 0, 0.356);
+   padding-top: 2px;
+   color: white;
+   text-align: center;
+  margin-left: center;
+  border-radius: 2em;
+}
+
+nav :hover{
+	color: #94B6EA; 	
+
+}
+
+main{
+    max-width: 1000px;
+background-color:  rgba(99, 99, 99, 0.356);
+width:90%;
+height: 350px;
+font-size: 1.5em;
+text-decoration: none;
+border-radius: 10%;
+text-align: center;
+font-size: 25px;
+color: white;
+margin-left: 5em;
+}
+
+
+aside{
+    max-width: 1000px;
+	border-radius: 10px;
+    background-color:  rgba(0, 0, 0, 0.356);
+    width: 35%;
+    height: 500px;
+    float:right;
+    text-align: center;
+    font-size: 1.5em;
+	font-family: "osi";
+	color: white;
+	padding-top: 100px;
+	margin-top: 5em;
+		}
+
+	article{
+        max-width: 1000px;
+		background-color:  rgba(99, 99, 99, 0.356);
+width: 60%;
+height: 500px;
+float:left;
+padding-right: 60px;
+border-radius: 10px;
+margin-top: 10em;
+color: white;
+
+	}
+	
+		
+		
+ ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color:white;
+}
+ a:hover{
+	color: #94B6EA;
+}
+
+p{
+
+    font-size: 40px;
+}
+h1{
+font-family: "osi";	
+color:white
+
+}
+@media screen and (max-width:900px){
+    body{
+        background: url("img/fondo.jpg");
+        background-size:100%;
+        background-size: cover;
+        background-repeat:no-repeat; 
+      background-attachment: fixed;
+    }
+
+    aside{
+        width: 100%;
+    }
+    
+    article{
+        margin-top: 5em;
+    }
+}
+
