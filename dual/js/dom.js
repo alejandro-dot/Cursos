@@ -23,20 +23,34 @@ caja.setAttribute('class', 'caja negro');
 var contenedor = document.getElementById('contenedor');
 contenedor.appendChild(caja);
 
-//---modificando la clase o ID de un elelmento
-caja.id ='dom';
+//---modificando la clase o ID de un elelmento :o
+caja.id ='primera ';
 caja.className = 'caja negro';
 
-//contendio del elemento padre
-//var padre = cajas[2].parentNode;
+//conociendo el elemento padre
 
-//padre.insertBefore(caja, primeracaja);
+var padre = cajas[0].parentNode;
+
+//padre.insertBefore(caja, cajauno);
 
 
-//----remplazar cajas
+//remplazar cajas
 //padre.replaceChild(caja, cajas[2]);
 
 
-//Eliminar nodos
+//ELIMINAAAAR
 
 //padre.removeChild(cajas[3]);
+
+
+
+// EVENTO DEL BOTÓN
+
+//llamando al BOTÓN
+var saludar= document.getElementById('saludar');
+saludar.addEventListener('click',saludo );
+
+
+function saludo() {
+alert('HOLAA SOY UN BOTÓN DEL JS');
+ }

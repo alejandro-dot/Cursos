@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/cajas.css">
+    <title>practica con DOM</title>
+  </head>
+  <body>
+
+<nav>
+  <h1>CREAR CAJAS </h1>
+     <ul><li><a href="../index.html" target="white">  principal </a></li>
+</nav>
+
+<button id="bcaja" class="creador"> crear caja</button>
+<section id="contenedor"></section>
+
+  <script>
+
+function crear(){
+
+  var contenedor= document.getElementById('contenedor');
+  var caja= document.createElement('div');
+  caja.className= 'caja';
+  contenedor.appendChild(caja);
+}
+
+var bcaja= document.getElementById('bcaja');
+bcaja.addEventListener('click', crear);
+  </script>
+  </body>
+</html>

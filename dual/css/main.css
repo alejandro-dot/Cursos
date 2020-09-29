@@ -8,6 +8,8 @@ body{
 .contenedor{
     width: 400px;
     padding: 20px;
+    background-color: rgba(84, 120, 255, .3);
+    margin-left: 30em;
 
 }
 .caja{
@@ -17,28 +19,52 @@ body{
     background-color: rgba(141, 137, 131, 0.452);
     font-size: 24px;
     color: black;
+
 }
 .negro{
   background-color: rgba(249, 24, 1, 0.452);
 }
 
-footer{
-    width: 40%;
-    height: 100px;
-    border-radius: 10px;
+main{
+    width: 30%;
+    height: 150px;
+    border-radius: 10em;
     color: white;
     background-color: rgba(117, 114, 114, 0.377);
+    margin-bottom: 2em;
+    margin-left: 2em;
+
+}
+h1{
+  text-align: center;
 
 }
 
-
 ul{
 	list-style: none;
+
+  font-size:30px;
+  padding-top: 2px;
 }
 a{
 	text-decoration: none;
 	color:white;
+
 }
  a:hover{
 	color: #94B6EA;
+}
+.uwu{
+
+  width: 10%;
+  height: 50px;
+  border-radius: 2em;
+  background-color:  rgba(148,148, 148, 0.3);
+  margin-left: 2em;
+
+}
+
+.uwu:hover{
+  background-color: rgba(255, 24, 0, 0.3);
+  color: white;
 }
