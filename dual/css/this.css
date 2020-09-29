@@ -1,0 +1,59 @@
+body{
+  background: url("../img/azul.jpg");
+background-size:100%;
+background-size: cover;
+  background-repeat:no-repeat;
+background-attachment: fixed;
+}
+nav{
+
+  width: 90%;
+height: 60px;
+padding-bottom: 50px;
+margin-top: 10px;
+margin-left: 1em;
+  background-color: rgba(0, 0, 0, 0.3);
+ padding-top: 2px;
+ color: white;
+ text-align: center;
+margin-left: center;
+border-radius: 2em;
+margin-bottom: 5em;
+
+}
+
+.caja{
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255, 0.3);
+  margin: 10px;
+  display: inline-block;
+  text-align: center;
+  font-size:30px;
+  color: white;
+  font-family: cursive;
+}
+.colores{
+  background-color: rgba(255, 240, 0, 0.3);
+}
+
+ul{
+
+
+  font-size:20px;
+  padding-top: 2px;
+}
+a{
+	text-decoration: none;
+	color:white;
+  float:left;
+
+}
+ a:hover{
+	color: rgba(255, 0, 20, 0.3);
+}
+ul:hover{
+  	color: rgba(255, 0, 20, 0.3);
+
+}

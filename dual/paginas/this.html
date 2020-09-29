@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/this.css">
+    <title>cajas con this </title>
+
+  </head>
+
+  <body>
+    <nav>
+      <h1>CAJAS LOCAS  </h1>
+         <ul><li><a href="../index.html" target="white">  principal </a></li>
+
+    </nav>
+
+    <div class="caja"></div>
+    <div class="caja"></div>
+    <div class="caja"></div>
+    <div class="caja"></div>
+    <div class="caja"></div>
+    <div class="caja"></div>
+    <div class="caja"></div>
+    <div class="caja"></div>
+    <div class="caja"></div>
+    <div class="caja"></div>
+    <div class="caja"></div>
+    <div class="caja"></div>
+    <div class="caja"></div>
+    <div class="caja"></div>
+    <div class="caja"></div>
+    <div class="caja"></div>
+    <div class="caja"></div>
+    <div class="caja"></div>
+    <div class="caja"></div>
+    <div class="caja"></div>
+
+<script>
+var cajas= document.getElementsByClassName('caja');
+function color() {
+this.classList.toggle('colores');
+}
+
+for(var i= 0; i< cajas.length; i++){
+  cajas[i].addEventListener('mouseover', color);
+
+}
+
+</script>
+
+
+  </body>
+
+</html>
