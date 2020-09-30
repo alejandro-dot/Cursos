@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="../css/formulario.css">
   </head>
   <body>
+    <nav>
+      <h1>Registrate</h1>
+    </nav>
     <div class="contenedor">
     <form class="formulario" action="" id="formulario" name="formulario">
    <div class="contenedor-inputs">
@@ -15,18 +18,18 @@
     <div class="sexo">
 
       <input type="radio" name="sexo" id="hombre" value="hombre">
-      <label for="hombre">Hombre</label>
+      <label class="label-radio" for="hombre">Hombre</label>
       <input type="radio" name="sexo" id="mujer" value="mujer">
-      <label for="mujer">Mujer</label>
+      <label class="label-radio" for="mujer">Mujer</label>
     </div>
     <div class="terminos">
       <input type="checkbox" name="terminos" id="terminos">
       <label for="terminos">Acepto terminos y condiciones</label>
     </div>
 
-     <ul>
-       <li>Error 1</li>
-       <li>Error 2</li>
+     <ul class="error" id="error">
+       <li></li>
+       <li></li>
      </ul>
 
   </div>
@@ -34,6 +37,12 @@
 </form>
 
 </div>
+
+<footer>
+  <h1>contenido</h1>
+ <ul><li><a href="../index.html" target="white">  principal </a></li>
+
+</footer>
 <script src="../js/formulario.js"></script>
 </body>
 </html>
