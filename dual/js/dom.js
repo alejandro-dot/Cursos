@@ -31,7 +31,7 @@ caja.className = 'caja negro';
 
 var padre = cajas[0].parentNode;
 
-//padre.insertBefore(caja, cajauno);
+padre.insertBefore(caja, cajauno);
 
 
 //remplazar cajas
@@ -50,7 +50,7 @@ var padre = cajas[0].parentNode;
 var saludar= document.getElementById('saludar');
 saludar.addEventListener('click',saludo );
 
-
+//función para el botón
 function saludo() {
 alert('HOLAA SOY UN BOTÓN DEL JS');
  }
