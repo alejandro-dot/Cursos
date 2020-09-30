@@ -27,7 +27,7 @@ nav{
    text-align: center;
   margin-left: center;
   border-radius: 2em;
-  margin-bottom: 10em;
+
 }
 button{
   border-radius: 2em;
@@ -37,8 +37,9 @@ button{
   color: black;
   font-size: 18px;
   padding: 30px;
-  margin-left: 10em;
+  margin-left: 20em;
   padding-top: 12px;
+  margin-bottom: 5em;
 }
 button:hover{
   background-color: rgba(255, 240, 0, 0.3);
@@ -46,6 +47,52 @@ button:hover{
 .pq{
 
    color: black;
+}
+header{
+  background-color:  rgba(99, 99, 99, 0.356);
+width: 70%;
+height: 150px;
+font-size: 18px;
+padding-right: 60px;
+border-radius: 5em;
+margin-top: 5em;
+color: white;
+margin-bottom: 2em;
+margin-left: 10em;
+text-align: center;
+padding-bottom: 20px;
+padding: 30px;
+}
+
+footer{
+  width: 30%;
+  height: 150px;
+  border-radius: 10em;
+  color: white;
+  background-color: rgba(117, 114, 114, 0.377);
+  margin-bottom: 2em;
+  margin-left: 2em;
+}
+footer h1{
+  font-size: 30px;
+  text-align:center;
+  margin-bottom: 10px;
+
+}
+ul{
+	list-style: none;
+margin-left: 30px;
+  font-size:30px;
+  padding-top: 2px;
+  
+}
+a{
+	text-decoration: none;
+	color:white;
+
+}
+ a:hover{
+	color: #94B6EA;
 }
 
 </style>
@@ -56,6 +103,11 @@ button:hover{
     <nav>
       <h1>Tiempo :O</h1>
     </nav>
+
+    <header>
+      <p>la función Set timeout es un reloj en el cual con el botón izquierdo lo puedes hacer funcionar.
+       y la funciónn Set interval es una que esta como prederterminado al abrir este archivo pero con ek botón derecho lo puedes parar. </p>
+    </header>
 
 <button id="btn"> iniciar</button>
 <button id="parar"> parar</button>
@@ -73,6 +125,12 @@ document.getElementById('parar').addEventListener('click', function(){
 })
 
 </script>
+<footer>
+  <h1>contenido</h1>
 
+ <ul><li><a href="..index.html" target="white">  principal </a></li>
+ <ul><li><a href="../paginas/fechas.html" target="white">  fechas </a></li>
+
+</footer>
   </body>
 </html>

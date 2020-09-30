@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<p id="feha"></p>
+
+<script>
+
+var fecha= new Date();
+document.write(fecha);
+
+function mostrartiempo(){
+  var fecha= new Date();
+  var parrafo= document.getElementById('fecha');
+  parrafo.innerHTML='fecha';
+
+}
+
+
+  var parrafo= document.getElementById(mostrartiempo, 1000);
+  conole.log(fecha.getHours()-12+'Horas');
+    conole.log(fecha.getMinutes()+'Minutos');
+      conole.log(fecha.getSeconds()+'Segundos');
+
+
+      var semana= ['domingo','lunes','martes', 'miercoles', 'jueves', 'viernes', 'sabado'];
+
+      console.log('Dia'+ semana[fecha.getDay()]);
+
+            console.log('Mes'+ fecha[fecha.getMotnh()]);
+
+            console.log('año'+ fecha[fecha.getFullyear()]);
+
+
+
+
+</script>
+
+  </body>
+</html>
