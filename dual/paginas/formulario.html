@@ -3,23 +3,142 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <style >
+    body{
+        background: url("../img/azul.jpg");
+      background-size:100%;
+      background-size: cover;
+        background-repeat:no-repeat;
+      background-attachment: fixed;
+    }
+
+    nav{
+
+      width: 90%;
+    height: 60px;
+    padding-bottom: 50px;
+    margin-top: 10px;
+    margin-left: 1em;
+      background-color: rgba(0, 0, 0, 0.3);
+     padding-top: 2px;
+     color: white;
+     text-align: center;
+    margin-left: center;
+    border-radius: 2em;
+    margin-bottom: 5em;
+
+    }
+    ul{
+
+
+      font-size:20px;
+      padding-top: 2px;
+    }
+    a{
+    	text-decoration: none;
+    	color:white;
+      float:left;
+
+    }
+     a:hover{
+    	color: rgba(255, 0, 20, 0.3);
+    }
+    ul:hover{
+      	color: rgba(255, 0, 20, 0.3);
+
+    }
+
+section form{
+   width: 500px;
+   padding: 50px;
+   background-color: rgba(117, 114, 114, 0.377);
+   margin: auto;
+   margin-top: 100px;
+   border-radius:2px ;
+   font-family: "osi";
+   color: white;
+
+}
+
+.boton{
+    width: 100px;
+    padding: 5px;
+    border-radius: 3px;
+    font-family: "osi";
+    text-align: center;
+    border-left: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+
+}
+.boton:hover{
+  background-color: rgba(117, 228, 24, 0.3);
+}
+.valor{
+   width: 100%;
+   background-color:rgba(00, 00, 00, 0.384) ;
+   padding: 10px;
+   border-radius: 5px;
+   margin-bottom: 15px;
+   border: 1px solid white;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 18px;
+
+}
+
+
+    </style>
   </head>
   <body>
-    <form action="" name="forumulario" id="formulario">
-          <input type="text" name="nombre" placeholder="nombre">
+    <nav>
+      <h1> Formulario sencillo</h1>
+       <ul><li><a href="../index.html" target="white">  principal </a></li>
+         <ul><li><a href="../paginas/registro.html" target="white"> formulario principal </a></li>
 
-          <input type="radio" name="sexo" id="hombre">
+    </nav>
+    <section>
+        <form action="" name="forumulario" id="formulario">
+          <input class="valor"type="text" name="nombre" placeholder="nombre">
+
+          <input type="radio" class="valor" name="sexo" id="hombre">
           <label for="nombre">Hombre</label>
 
-          <input type="radio" name="sexo" id="mujer">
+          <input class="valor" type="radio" name="sexo" id="mujer">
           <label for="mujer">Mujer</label>
 
-          <input type="checkbox" name="terminos" id="terminos">
+          <input class="valor"type="checkbox" name="terminos" id="terminos">
           <label for="terminos">Terminos</label>
 
-          <input type="submit" value="Enviar">
+          <input class="boton"type="submit" value="Enviar">
       </form>
-        <script src="../js/formulario.js"></script>
+
+  </section>
+
+        <script >
+        var formulario= document.getElementById('formulario');
+        var nombre = formulario.nombre;
+         var sexo = formulario.sexo;
+         var terminos = formulario.terminos;
+        //aquí se valida el nombre
+        function validar(e){
+          if(nombre.value>18){
+            alert('mucho texto');
+        }else if(nombre.value== ''){
+          alert('ingresa un nombre');
+        }
+        //Aquí se valida los radio button de hombre y mujer
+        if(sexo[0].checked== false && sexo[1].checked== false ){
+
+          alert('pana, digame su sexo o me da ansiedad');
+        }
+        if(!terminos.checked){
+          alert('ya wey, me da ansiedad. acepta los terminos');
+        }
+          e.preventDefault;
+        }
+        formulario.addEventListener('submit', validar);
+</script>
+
 
   </body>
 </html>
