@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- CDN VideoJS: CSS -->
+	<!-- <link href="https://vjs.zencdn.net/7.2.3/video-js.css" rel="stylesheet"> -->
+	<link rel="stylesheet" href="css/video-js.css">
+
+	<!-- CDN VideoJS: JS -->
+	<!-- <script src="https://vjs.zencdn.net/7.2.3/video.js"></script> -->
+	<script src="js/video.js"></script>
+
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+	<link rel="stylesheet" href="css/estilos.css">
+	<title>Video.js</title>
+</head>
+<body>
+	<header>
+		<h1 class="titulo">Practica video c:</h1>
+	</header>
+
+	<main>
+		<div class="contenedor">
+			<video class="fm-video video-js vjs-16-9 vjs-big-play-centered" controls data-setup="{}" id="fm-video">
+		
+			</video>
+
+			<article>
+				<h2>Ya sé- Daniel, me estás matando</h2>
+				<p>Ya sé que no me quieres ver, ya lo sé
+Que estas cansada de mi forma de querer
+Que no me entiendes y mis celos te hacen mal
+Que mis caricias ya no brillan en tu piel
+Y que mis noches están llenas de ansiedad. Ya sé, Que estás con alguien más, ya lo sé
+Que estas tranquila y que no piensas regresar
+Que el tiene todo lo que nunca pude ser
+Que andas diciendo que no tengo dignidad
+Y no te importa si estoy bien o si estoy mal</p><br />
+
+				<p>Daniel, me estás matando me acompañó en estas práctica :)</p>
+			</article>
+		</div>
+	</main>
+
+	<script>
+		var reproductor = videojs('fm-video', {
+			fluid: true
+		});
+	</script>
+</body>
+</html>
