@@ -1,137 +1,36 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Tiempo</title>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Fechas y Tiempo</title>
+</head>
+<body>
+	<p id="fecha"></p>
+	<script>
+		var fecha = new Date();
+		var parrafo = document.getElementById('fecha');
+		// document.write(fecha);
 
-<style>
+		function mostrarTiempo(){
+			var fecha = new Date();
+			parrafo.innerHTML = fecha;
+		}
 
-body{
-    background: url("../img/azul.jpg");
-  background-size:100%;
-  background-size: cover;
-    background-repeat:no-repeat;
-  background-attachment: fixed;
-}
+		// var intervalo = setInterval(mostrarTiempo, 1000);
 
-nav{
-    max-width: 1000px;
-    width: 100%;
-  height: 60px;
-  padding-bottom: 50px;
-  margin-top: 10px;
-  margin-left: 10em;
-    background-color: rgba(0, 0, 0, 0.356);
-   padding-top: 2px;
-   color: white;
-   text-align: center;
-  margin-left: center;
-  border-radius: 2em;
+// -----
+		console.log(fecha.getHours() - 12 + ' Horas');
+		console.log(fecha.getMinutes() + ' Minutos');
+		console.log(fecha.getSeconds() + ' Segundos');
 
-}
-button{
-  border-radius: 2em;
-  width: 100px;
-  height: 50px;
-  background-color: rgba(255,255, 255, 0.3);
-  color: black;
-  font-size: 18px;
-  padding: 30px;
-  margin-left: 20em;
-  padding-top: 12px;
-  margin-bottom: 5em;
-}
-button:hover{
-  background-color: rgba(255, 240, 0, 0.3);
-}
-.pq{
+		var semana = ['Domingo', 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado'];
+		console.log(semana[fecha.getDay()]);
 
-   color: black;
-}
-header{
-  background-color:  rgba(99, 99, 99, 0.356);
-width: 70%;
-height: 150px;
-font-size: 18px;
-padding-right: 60px;
-border-radius: 5em;
-margin-top: 5em;
-color: white;
-margin-bottom: 2em;
-margin-left: 10em;
-text-align: center;
-padding-bottom: 20px;
-padding: 30px;
-}
+		console.log('Dia: ' + fecha.getDate());
 
-footer{
-  width: 30%;
-  height: 150px;
-  border-radius: 10em;
-  color: white;
-  background-color: rgba(117, 114, 114, 0.377);
-  margin-bottom: 2em;
-  margin-left: 2em;
-}
-footer h1{
-  font-size: 30px;
-  text-align:center;
-  margin-bottom: 10px;
+		console.log('Mes: ' + fecha.getMonth());
+		console.log('Año: ' + fecha.getFullYear());
 
-}
-ul{
-	list-style: none;
-margin-left: 30px;
-  font-size:30px;
-  padding-top: 2px;
-
-}
-a{
-	text-decoration: none;
-	color:white;
-
-}
- a:hover{
-	color: #94B6EA;
-}
-
-</style>
-
-
-  </head>
-  <body>
-    <nav>
-      <h1>Tiempo :O</h1>
-    </nav>
-
-    <header>
-      <p>la función Set timeout es un reloj en el cual con el botón izquierdo lo puedes hacer funcionar.
-       y la funciónn Set interval es una que esta como prederterminado al abrir este archivo pero con ek botón derecho lo puedes parar. </p>
-    </header>
-
-<button id="btn"> iniciar</button>
-<button id="parar"> parar</button>
-
-<script>
-  //función de set timeout
-function saludo(){
-  alert('hola mundo');
-} document.getElementById('btn').addEventListener('click', function(){
-    setTimeout(saludo, 3000);})
-
-var intervalo = setInterval(saludo, 5000);
-document.getElementById('parar').addEventListener('click', function(){
-  clearInterval(intervalo);
-})
-
-</script>
-<footer>
-  <h1>contenido</h1>
-
- <ul><li><a href="..index.html" target="white">  principal </a></li>
-<ul><li><a href="../paginas/hoisting.html" target="white">  principal </a></li>
-
-
-</footer>
-  </body>
+	</script>
+</body>
 </html>
